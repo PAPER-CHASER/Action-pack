@@ -1,0 +1,33 @@
+package front.desk.app;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class FrontDeskApp {
+    public static void main(String[] args) {
+    JFrame myframe=new JFrame("Atulongi");
+    JPanel mypanel=new JPanel();
+    JLabel Usernamelabel=new JLabel("Username ");
+    JTextField Username=new JTextField();
+    Username.setColumns(20);
+                                                                                                
+    JLabel Passwordlabel=new JLabel("Password ");
+    JTextField Password=new JTextField();
+    Password.setColumns(20);
+    JButton clear=new JButton("clear");
+    JButton login=new JButton("login");
+    mypanel.add(Usernamelabel);
+    mypanel.add(Username);
+    mypanel.add(Passwordlabel);
+    mypanel.add(Password);
+    mypanel.add(clear);
+    mypanel.add(login);
+    myframe.add(mypanel);
+    myframe.setVisible(true);
+    
+    
+    }
+}
